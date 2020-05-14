@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+  {% block content %}
+    <h1>Authors List</h1>
+    {% if author_list %}
+      <table border=5>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Date of birth</th>
+      <tr>
+        {% for author in author_list %}
+        <td><a href="{{author.get_absolute_url}}">{{author.first_name}}</a></td>
+        <td>{{author.last_name}}</td>
+        <td>{{author.date_of_birth}}</td>
+      </tr>
+        {% endfor %}
+      </table>
+    {% endif %}
+
+  {% endblock %}

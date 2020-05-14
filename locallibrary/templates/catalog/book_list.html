@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+  {% block content %}
+    <h1>Books List</h1>
+    {% if book_list %}
+      <table border=5>
+        <th>Book</th>
+        <th>Author</th>
+      <tr>
+        {% for book in book_list %}
+        <td><a href="{{book.get_absolute_url}}">{{book.title}}</a></td>
+        <td>{{book.author}}</td>
+      </tr>
+        {% endfor %}
+      </table>
+    {% endif %}
+
+  {% endblock %}

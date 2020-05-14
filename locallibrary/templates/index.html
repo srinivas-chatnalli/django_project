@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+  {% block content %}
+    <h1>Local Library</h1>
+    <p>Contains the information of the local library.....</p>
+
+    <h1>Library Info</h1>
+    <table border=5>
+      <thead>
+        <th>Book Count</th>
+        <th>Total Book Count</th>
+        <th>Available Books</th>
+        <th>Authors</th>
+      </thead>
+      <tr>
+        <td>{{num_books}}</td>
+        <td>{{num_book_instances}}</td>
+        <td>{{num_available_books}}</td>
+        <td>{{num_authors}}</td>
+      </tr>
+    </table>
+    <p>Number of times You visited: {{num_visits}} {% if num_visits == 1 %} time {% else %} times. {% endif %}</p>
+  {% endblock %}
