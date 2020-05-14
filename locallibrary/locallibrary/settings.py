@@ -30,12 +30,8 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', '')
 DEBUG = False
 #DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 
-<<<<<<< HEAD
-ALLOWED_HOSTS = ['0.0.0.0', 'localhost', 'intense-forest-77569.herokuapp.com']
-=======
-ALLOWED_HOSTS = ['0.0.0.0', 'localhost', 'localllibraryy.herokuapp.com']
->>>>>>> ab620a78913f78fed2a59abfb5900af46b74ffd0
 
+ALLOWED_HOSTS = ['0.0.0.0', 'localhost', 'local-library-hyderabad.herokuapp.com']
 
 # Application definition
 
